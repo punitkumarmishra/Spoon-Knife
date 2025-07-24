@@ -1,7 +1,10 @@
 name: Github-Workflow
 
 on:
-  workflow_dispatch:
+  push:
+    branches: [main]
+  pull_request:
+    branhes: [main]
 
 jobs:
   test-workflow:
